@@ -1,0 +1,11 @@
+.container {
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+
+.mak {
+  background-color: var(--mantine-color-red-8);
+  border-radius: 0.25em;
+  padding: 0.5em;
+}
