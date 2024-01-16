@@ -12,16 +12,14 @@ const ImageCarousel = ({ images }: { images: Array<string> }) => {
       controlSize={40}
       className={classes.carousel}
       withIndicators={true}
-      height={700}
     >
       {images.map((img) => (
         <Carousel.Slide className={classes.slide}>
           <Image
             className={classes.image}
-            radius="xl"
+            radius="md"
             src={`images/${img}.jpg`}
             fit="contain"
-            height={600}
           />
         </Carousel.Slide>
       ))}

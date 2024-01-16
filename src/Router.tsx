@@ -14,7 +14,7 @@ const Router = ({ page, mb }: { page: string; mb: boolean | undefined }) => {
       ) : page === 'contact' ? (
         <Contact />
       ) : (
-        <Portfolio mb={mb} />
+        <Portfolio />
       )}
     </div>
   );

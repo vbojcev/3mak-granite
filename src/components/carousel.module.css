@@ -1,6 +1,7 @@
 .carousel {
   max-width: $mantine-breakpoint-md;
-  margin: 0 auto;
+  margin: 1em auto;
+  height: fit-content;
 }
 
 .slide {
