@@ -1,0 +1,16 @@
+.carousel {
+  max-width: $mantine-breakpoint-md;
+  margin: 0 auto;
+}
+
+.slide {
+  padding: 0 3em;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.image {
+  margin: 0 auto;
+}
