@@ -38,6 +38,11 @@ p {
 }
 
 .header {
+  background-color: #161616;
+  border: 0px;
+}
+
+.headerGroup {
   max-width: $mantine-breakpoint-lg;
   margin: 0 auto;
 }
@@ -48,14 +53,6 @@ p {
   padding: 0 0.5em;
 }
 
-.mainMobile {
-  max-width: $mantine-breakpoint-lg;
-  margin: 0 auto;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #d3d3d3;
-  }
+.mainShell {
+  background-color: #050505;
 }

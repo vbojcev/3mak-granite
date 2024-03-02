@@ -1,5 +1,5 @@
 import Contact from './pages/Contact';
-import Home from './pages/Home';
+import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 
 const Router = ({ page, mb }: { page: string; mb: boolean | undefined }) => {
@@ -9,8 +9,8 @@ const Router = ({ page, mb }: { page: string; mb: boolean | undefined }) => {
         page != 'portfolio' ? (mb ? 'mainMobile' : 'main') : 'mainMobile'
       }
     >
-      {page === 'home' ? (
-        <Home />
+      {page === 'about' ? (
+        <About />
       ) : page === 'contact' ? (
         <Contact />
       ) : (

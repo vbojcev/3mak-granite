@@ -5,7 +5,7 @@
 }
 
 .mak {
-  background-color: var(--mantine-color-red-8);
-  border-radius: 0.25em;
+  background-color: rgba(255, 0, 0, 1);
+  border-radius: 0.125em;
   padding: 0.5em;
 }
