@@ -1,6 +1,6 @@
-import ImageCarousel from '../components/ImageCarousel';
+import { Flex, Stack } from '@mantine/core';
 
-const kitchens = [
+const stack1 = [
   'kitchen1',
   'kitchen2',
   'kitchen3',
@@ -9,9 +9,7 @@ const kitchens = [
   'kitchen6',
 ];
 
-const waterfalls = [
-  'waterfall1',
-  'waterfall2',
+const stack2 = [
   'waterfall3',
   'waterfall4',
   'waterfall5',
@@ -19,13 +17,37 @@ const waterfalls = [
   'waterfall7',
 ];
 
-const Portfolio = (/*{ mb }: { mb: boolean | undefined }*/) => {
+const Img = ({ name }: { name: string }) => {
+  return (
+    <div className="galleryImage">
+      <img src={`/images/${name}.jpg`} alt={name} />
+    </div>
+  );
+};
+
+const Portfolio = () => {
   return (
     <>
-      <h1>Kitchens</h1>
-      <ImageCarousel images={kitchens} />
-      <h1>Waterfall Fixtures</h1>
-      <ImageCarousel images={waterfalls} />
+      <h1>Portfolio</h1>
+      <Flex
+        gap="xs"
+        justify="center"
+        align="flex-start"
+        direction="row"
+        wrap="nowrap"
+        className="gallery"
+      >
+        <Stack gap="xs">
+          {stack1.map((img) => (
+            <Img name={img}></Img>
+          ))}
+        </Stack>
+        <Stack gap="xs">
+          {stack2.map((img) => (
+            <Img name={img}></Img>
+          ))}
+        </Stack>
+      </Flex>
     </>
   );
 };
