@@ -20,7 +20,9 @@ const stack2 = [
 const Img = ({ name }: { name: string }) => {
   return (
     <div className="galleryImage">
-      <img src={`/images/${name}.jpg`} alt={name} />
+      <a href={`/images/${name}.jpg`}>
+        <img src={`/images/${name}.jpg`} alt={name} />
+      </a>
     </div>
   );
 };
@@ -39,12 +41,12 @@ const Portfolio = () => {
       >
         <Stack gap="xs">
           {stack1.map((img) => (
-            <Img name={img}></Img>
+            <Img name={img} key={img}></Img>
           ))}
         </Stack>
         <Stack gap="xs">
           {stack2.map((img) => (
-            <Img name={img}></Img>
+            <Img name={img} key={img}></Img>
           ))}
         </Stack>
       </Flex>
