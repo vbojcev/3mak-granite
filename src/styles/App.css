@@ -56,3 +56,15 @@ p {
 .mainShell {
   background-color: #050505;
 }
+
+.gallery {
+  max-width: $mantine-breakpoint-lg;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.galleryImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
